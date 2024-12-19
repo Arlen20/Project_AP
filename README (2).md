@@ -2,6 +2,9 @@
 
 An engaging and user-friendly web application with full frontend functionality and backend support for CRUD operations, premium account features, login, and registration. This project is built to provide a dynamic experience for admins and users, with seamless integration of a MongoDB database.
 
+  ![Screenshot 2024-12-15 210446](https://github.com/user-attachments/assets/11a5dc43-2003-49f4-8eb5-a8b6d676da07)
+
+
 ## About The Project
 
 The purpose of this project is to explain everything related to Kazakh History and the Kazakh Kaganat using all available methods. Users can view, filter, and engage with content, while admins have full control to manage the website's content through CRUD operations. Premium users also have the ability to edit articles, pending admin approval.
