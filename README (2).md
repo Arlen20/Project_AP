@@ -1,4 +1,4 @@
-# Kazakh History: Kazakh Kaganat
+# Kazakh History
 
 An engaging and user-friendly web application with full frontend functionality and backend support for CRUD operations, premium account features, login, and registration. This project is built to provide a dynamic experience for admins and users, with seamless integration of a MongoDB database.
 
@@ -17,7 +17,7 @@ The purpose of this project is to explain everything related to Kazakh History a
 
 This project utilizes modern web development tools and frameworks:
 
-- **Frontend**: HTML, CSS, JavaScript, and a modern JavaScript framework (like React, if applicable)
+- **Frontend**: HTML, CSS, JavaScript, and a modern JavaScript framework (like React,Bootstrap,Postman,Jquary)
 - **Backend**: Go (Golang) for server-side development
 - **Database**: MongoDB for data storage and retrieval
 
@@ -70,28 +70,6 @@ Make sure you have the following installed:
 - **Premium Account Request**: Users can request a premium account, which allows them to edit articles upon admin approval.
 - **Content Filtering**: Users can filter images or content by year.
 
-## API Endpoints
-
-| Method | Endpoint         | Description              |
-| ------ | ---------------- | ------------------------ |
-| POST   | /auth/register   | Registers a new user     |
-| POST   | /auth/login      | Logs in a user           |
-| GET    | /content         | Gets all content         |
-| POST   | /content         | Adds new content (admin) |
-| PUT    | /content/:id    | Updates content (admin)  |
-| DELETE | /content/:id    | Deletes content (admin)  |
-| POST   | /premium/request | Requests premium status  |
-
-## Contributing
-
-Contributions are welcome! To contribute, follow these steps:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## Contact
 
 **Team Members:**
@@ -100,13 +78,9 @@ Contributions are welcome! To contribute, follow these steps:
 - **Nurbol Nurlybai**
 - **Muslim Toleumukhanbet**
 
-**Email**: [your_email@example.com](mailto:your_email@example.com)
-**GitHub**: [your_username](https://github.com/your_username)
-
 ## Acknowledgments
 
 - [MongoDB](https://www.mongodb.com/)
 - [Go (Golang)](https://go.dev/)
-- [Choose an Open Source License](https://choosealicense.com)
 
 This README serves as a guide to help you understand and set up the project. If you have any questions, feel free to reach out.
