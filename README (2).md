@@ -87,3 +87,73 @@ Make sure you have the following installed:
 - [Go (Golang)](https://go.dev/)
 
 This README serves as a guide to help you understand and set up the project. If you have any questions, feel free to reach out.
+
+Steps to Interact with Your API in Postman
+Launch Postman
+
+Open Postman and ensure it's up-to-date.
+Set Up Your API Collection
+
+Create a new collection to organize your API requests.
+Base URL
+
+Since your API runs on localhost:8080, all requests will start with http://localhost:8080.
+CRUD Operations
+1. Create a User (POST)
+Method: POST
+URL: http://localhost:8080/users
+Headers:
+Content-Type: application/json
+Body:
+json
+Copy code
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+2. Get All Users with Filtering, Sorting, and Pagination (GET)
+Method: GET
+URL: http://localhost:8080/users
+Query Parameters (optional):
+name: Filter users by name (e.g., name=John).
+email: Filter users by email (e.g., email=@example.com).
+sort_by: Column to sort by (e.g., sort_by=name).
+order: Sort order (asc or desc).
+page: Page number for pagination (e.g., page=1).
+limit: Number of users per page (e.g., limit=5).
+3. Get a User by ID (GET)
+Method: GET
+URL: http://localhost:8080/users/{id}
+Replace {id} with the actual user ID (e.g., http://localhost:8080/users/1).
+4. Update a User by ID (PUT)
+Method: PUT
+URL: http://localhost:8080/users/{id}
+Replace {id} with the actual user ID.
+Headers:
+Content-Type: application/json
+Body:
+json
+Copy code
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+5. Delete a User by ID (DELETE)
+Method: DELETE
+URL: http://localhost:8080/users/{id}
+Replace {id} with the actual user ID.
+Testing Filtering, Sorting, and Pagination
+Example Request:
+Method: GET
+URL: http://localhost:8080/users?name=John&sort_by=name&order=asc&page=1&limit=2
+Expected Response:
+json
+Copy code
+{
+  "data": [
+    { "id": 1, "name": "John Smith", "email": "john.smith@example.com" },
+    { "id": 2, "name": "John Doe", "email": "john.doe@example.com" }
+  ],
+  "totalPages": 5,
+  "total": 10
+}
